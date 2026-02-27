@@ -19,6 +19,20 @@
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-02-28
+
+### Changed
+
+- **README 美化**：为各章节添加 emoji，增强可读性
+
+### Removed
+
+- **Node.js 依赖**：完全移除 package.json 和相关脚本
+- **Firecrawl 集成**：删除 Firecrawl 相关命令和配置
+- **升级系统**：删除 `/upgrade` 和 `/release` 命令
+  - 这些命令依赖 package.json 进行版本管理
+  - 项目简化为纯静态配置，不再需要版本管理系统
+
 ## [0.1.0] - 2026-02-27
 
 ### 初始版本 - 基于 heyitsnoah/claudesidian v0.14.2
