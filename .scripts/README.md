@@ -35,8 +35,8 @@ Scrapes multiple URLs and auto-generates filenames.
 .scripts/firecrawl-batch.sh <url1> <url2> <url3>
 
 # Custom output directory
-.scripts/firecrawl-batch.sh -o 01_Projects/Research/ <url1> <url2>
-.scripts/firecrawl-batch.sh --output-dir 03_Resources/Articles/ <url1> <url2>
+.scripts/firecrawl-batch.sh -o 10_Projects/Research/ <url1> <url2>
+.scripts/firecrawl-batch.sh --output-dir 30_Resources/Articles/ <url1> <url2>
 ```
 
 ### Transcript Extraction
@@ -50,7 +50,7 @@ Extracts transcripts from YouTube videos.
 .scripts/transcript-extract.sh <youtube-url>
 
 # Custom output directory
-.scripts/transcript-extract.sh <youtube-url> 01_Projects/Research/
+.scripts/transcript-extract.sh <youtube-url> 10_Projects/Research/
 ```
 
 ## NPM Scripts

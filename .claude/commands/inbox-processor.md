@@ -17,10 +17,10 @@ Review all notes in `00_Inbox/` and help categorize them:
    - Suggest appropriate destination
 
 3. **Categorization Rules**
-   - **→ 01_Projects**: Has deadline, specific outcome
-   - **→ 02_Areas**: Ongoing responsibility, no end date
-   - **→ 03_Resources**: Reference material, knowledge
-   - **→ 04_Archive**: Old/completed, no longer active
+   - **→ 10_Projects**: Has deadline, specific outcome
+   - **→ 20_Areas**: Ongoing responsibility, no end date
+   - **→ 30_Resources**: Reference material, knowledge
+   - **→ 40_Archive**: Old/completed, no longer active
    - **→ Delete**: No value, redundant, or temporary
 
 4. **Suggest Actions**

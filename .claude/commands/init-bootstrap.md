@@ -95,10 +95,10 @@ Then generate a customized CLAUDE.md file tailored to their needs.
 
    **If using PARA, ask specific setup questions:**
    [PARA Method by Tiago Forte](https://fortelabs.com/blog/para/)
-   - "What active projects are you working on?" (Create folders in 01_Projects)
+   - "What active projects are you working on?" (Create folders in 10_Projects)
    - "What areas of responsibility do you maintain?" (e.g., Work, Health,
      Finance, Family)
-   - "What topics do you research frequently?" (Set up in 03_Resources)
+   - "What topics do you research frequently?" (Set up in 30_Resources)
    - "Any projects you recently completed?" (Can archive with summaries)
 
    **General preferences:**
@@ -194,9 +194,9 @@ Then generate a customized CLAUDE.md file tailored to their needs.
    - Include their websites/resources if provided
    - Add any custom naming conventions
    - Pre-populate with their projects and areas:
-     - Create project folders in 01_Projects/
-     - Create area folders in 02_Areas/
-     - Create resource topics in 03_Resources/
+     - Create project folders in 10_Projects/
+     - Create area folders in 20_Areas/
+     - Create resource topics in 30_Resources/
      - Add README files explaining each project/area
 
 7. **Import Existing Vault (if applicable)**
@@ -221,7 +221,7 @@ Then generate a customized CLAUDE.md file tailored to their needs.
      - Research/ (source materials)
      - Chats/ (AI conversations)
      - Daily Progress/ (running log)
-   - Create 05_Attachments/Organized/ directory
+   - Create 50_Attachments/Organized/ directory
    - Set up .gitignore if using git (include .mcp.json, node_modules)
    - Create initial templates if requested
    - Create WEEKLY_REVIEW.md if user wants review ritual
@@ -790,40 +790,40 @@ Assistant: Great! I'll configure your vault for research, writing, and client
 project management.
 
 2. **What specific projects are you currently working on?** (I'll create folders
-   for each in 01_Projects)
+   for each in 10_Projects)
 
 User: I'm writing a book about productivity systems, building a SaaS app, and
 planning a conference talk
 
 Assistant: Perfect! I'll set up project folders for:
 
-- 01_Projects/Book - Productivity Systems/
-- 01_Projects/SaaS App Development/
-- 01_Projects/Conference Talk/
+- 10_Projects/Book - Productivity Systems/
+- 10_Projects/SaaS App Development/
+- 10_Projects/Conference Talk/
 
 3. **What ongoing areas of responsibility do you maintain?** (These go in
-   02_Areas - things without an end date)
+   20_Areas - things without an end date)
 
 User: My newsletter, health & fitness, personal finances, and family activities
 
 Assistant: I'll create area folders for:
 
-- 02_Areas/Newsletter/
-- 02_Areas/Health & Fitness/
-- 02_Areas/Finances/
-- 02_Areas/Family/
+- 20_Areas/Newsletter/
+- 20_Areas/Health & Fitness/
+- 20_Areas/Finances/
+- 20_Areas/Family/
 
 4. **What topics do you frequently research or reference?** (I'll organize these
-   in 03_Resources)
+   in 30_Resources)
 
 User: AI tools, productivity methods, SaaS metrics, and writing techniques
 
 Assistant: Setting up resource folders for:
 
-- 03_Resources/AI Tools/
-- 03_Resources/Productivity Methods/
-- 03_Resources/SaaS Metrics/
-- 03_Resources/Writing Techniques/
+- 30_Resources/AI Tools/
+- 30_Resources/Productivity Methods/
+- 30_Resources/SaaS Metrics/
+- 30_Resources/Writing Techniques/
 
 [Continues with questions...]
 

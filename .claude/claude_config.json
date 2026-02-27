@@ -1,5 +1,5 @@
 {
-  "name": "Claudesidian",
+  "name": "My-Claudesidian",
   "description": "Claude Code + Obsidian Starter Kit",
   "version": "1.0.0",
   "settings": {
@@ -37,8 +37,8 @@
     "ws": "weekly-synthesis"
   },
   "preferences": {
-    "primary_folders": ["00_Inbox", "01_Projects", "02_Areas", "03_Resources"],
-    "template_folder": "06_Metadata/Templates",
+    "primary_folders": ["00_Inbox", "10_Projects", "20_Areas", "30_Resources"],
+    "template_folder": "60_Metadata/Templates",
     "archive_after_days": 30,
     "default_note_location": "00_Inbox"
   }

@@ -46,9 +46,9 @@ For each URL:
 filename=$(basename "$url" | sed 's/[^a-zA-Z0-9._-]/_/g')
 
 # Use wget or curl to download with timeout
-wget --timeout=30 -O "05_Attachments/$filename" "$url"
+wget --timeout=30 -O "50_Attachments/$filename" "$url"
 # or
-curl --max-time 30 -L "$url" -o "05_Attachments/$filename"
+curl --max-time 30 -L "$url" -o "50_Attachments/$filename"
 ```
 
 ### Step 3: Verify Downloads
@@ -56,7 +56,7 @@ curl --max-time 30 -L "$url" -o "05_Attachments/$filename"
 Check that files were downloaded successfully:
 
 ```bash
-ls -la "05_Attachments/"
+ls -la "50_Attachments/"
 ```
 
 ### Step 4: Organize Files
@@ -77,11 +77,11 @@ For Images:
 
 ### Step 5: Move to Organized
 
-Move renamed files to `05_Attachments/Organized/` with descriptive names
+Move renamed files to `50_Attachments/Organized/` with descriptive names
 
 ### Step 6: Update Index
 
-Add entries to `05_Attachments/00_Index.md`
+Add entries to `50_Attachments/00_Index.md`
 
 ### Step 7: Commit Changes
 
@@ -109,8 +109,8 @@ git push
    - Handle download failures gracefully
 
 4. **Organization**:
-   - Downloaded files go to `05_Attachments/`
-   - After renaming, move to `05_Attachments/Organized/`
+   - Downloaded files go to `50_Attachments/`
+   - After renaming, move to `50_Attachments/Organized/`
    - Update links across vault if needed
 
 ## Workflow

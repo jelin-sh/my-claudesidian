@@ -1,27 +1,26 @@
 {
-  "name": "claudesidian",
+  "name": "my-claudesidian",
   "version": "0.14.2",
   "description": "Claude Code + Obsidian Starter Kit - AI-powered second brain",
   "type": "module",
   "scripts": {
-    "setup": "pnpm install && echo '✅ Setup complete! Configure GEMINI_API_KEY for vision features'",
-    "test-gemini": "GEMINI_API_KEY=${GEMINI_API_KEY} node .claude/mcp-servers/gemini-vision.mjs",
+    "setup": "pnpm install && echo '✅ 设置完成！'",
     "lint": "eslint --config .config/eslint.config.js . --fix && prettier --config .config/.prettierrc.js --write .",
     "lint:check": "eslint --config .config/eslint.config.js . && prettier --config .config/.prettierrc.js --check .",
     "format": "prettier --config .config/.prettierrc.js --write .",
     "format:check": "prettier --config .config/.prettierrc.js --check .",
-    "attachments:list": "ls -1 '05_Attachments/' | grep -v Organized | head -20",
-    "attachments:count": "ls -1 '05_Attachments/' | grep -v Organized | wc -l",
-    "attachments:organized": "ls -1 '05_Attachments/Organized' 2>/dev/null | wc -l || echo '0'",
+    "attachments:list": "ls -1 '50_Attachments/' | grep -v Organized | head -20",
+    "attachments:count": "ls -1 '50_Attachments/' | grep -v Organized | wc -l",
+    "attachments:organized": "ls -1 '50_Attachments/Organized' 2>/dev/null | wc -l || echo '0'",
     "attachments:unprocessed": "pnpm attachments:count",
     "attachments:refs": "grep -r \"$1\" . --include=\"*.md\" 2>/dev/null | head -20",
-    "attachments:sizes": "find 05_Attachments -type f -exec du -h {} + | sort -rh | head -20",
-    "attachments:orphans": "for file in 05_Attachments/*; do basename \"$file\" | xargs -I {} sh -c 'grep -r \"{}\" . --include=\"*.md\" > /dev/null || echo \"{}\"'; done",
-    "attachments:recent": "find 05_Attachments -type f -mtime -7 -exec ls -la {} \\;",
-    "attachments:create-organized": "mkdir -p 05_Attachments/Organized",
+    "attachments:sizes": "find 50_Attachments -type f -exec du -h {} + | sort -rh | head -20",
+    "attachments:orphans": "for file in 50_Attachments/*; do basename \"$file\" | xargs -I {} sh -c 'grep -r \"{}\" . --include=\"*.md\" > /dev/null || echo \"{}\"'; done",
+    "attachments:recent": "find 50_Attachments -type f -mtime -7 -exec ls -la {} \\;",
+    "attachments:create-organized": "mkdir -p 50_Attachments/Organized",
     "transcript:extract": ".scripts/transcript-extract.sh",
     "vault:stats": ".scripts/vault-stats.sh",
-    "check-updates": "REMOTE=$(curl -s https://raw.githubusercontent.com/heyitsnoah/claudesidian/main/package.json | grep version | head -1 | sed 's/.*: \"\\(.*\\)\".*/\\1/') && LOCAL=$(grep version package.json | head -1 | sed 's/.*: \"\\(.*\\)\".*/\\1/') && if [ \"$LOCAL\" != \"$REMOTE\" ]; then echo -e \"📦 Update available! Latest: $REMOTE (you have: $LOCAL)\\n\\n⬇\\n/upgrade\\n⬆\\n\\n## What will this do\\n\\n✅ Update to the latest version of Claudesidian\\n✅ Get new features and improvements\\n✅ Preserve your vault content and settings\\n\\n\"; fi"
+    "check-updates": "REMOTE=$(curl -s https://raw.githubusercontent.com/jelin-sh/my-claudesidian/main/package.json | grep version | head -1 | sed 's/.*: \"\\(.*\\)\".*/\\1/') && LOCAL=$(grep version package.json | head -1 | sed 's/.*: \"\\(.*\\)\".*/\\1/') && if [ \"$LOCAL\" != \"$REMOTE\" ]; then echo -e \"📦 有可用更新！最新: $REMOTE (当前: $LOCAL)\\n\\n⬇\\n/upgrade\\n⬆\\n\\n## 这将做什么\\n\\n✅ 更新到最新版本的 my-claudesidian\\n✅ 获取新功能和改进\\n✅ 保留你的仓库内容和设置\\n\\n\"; fi"
   },
   "keywords": [
     "obsidian",
@@ -32,12 +31,9 @@
     "knowledge-management",
     "para-method"
   ],
-  "author": "",
+  "author": "jelin-sh",
   "license": "MIT",
-  "dependencies": {
-    "@google/generative-ai": "^0.21.0",
-    "@modelcontextprotocol/sdk": "^1.25.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@eslint/compat": "^1.4.1",
     "@typescript-eslint/eslint-plugin": "^8.53.0",
