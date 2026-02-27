@@ -1,106 +1,59 @@
-# Scripts Directory
+# Scripts 目录
 
-Helper scripts for vault automation and web content capture.
+用于 vault 自动化操作的辅助脚本。
 
-## Available Scripts
+## 可用脚本
 
-### Attachment Management
-
-These are primarily called via npm/pnpm commands in package.json:
-
-- `update-attachment-links.js` - Updates note links after moving attachments
-- `fix-renamed-links.js` - Fixes links after renaming files
-
-### Web Content Capture
-
-**Note**: These scripts require API keys to function:
-
-#### firecrawl-scrape.sh
-
-Scrapes a single URL and saves as markdown.
-
-```bash
-# Requires FIRECRAWL_API_KEY environment variable
-.scripts/firecrawl-scrape.sh <url> <output_file>
-```
-
-#### firecrawl-batch.sh
-
-Scrapes multiple URLs and auto-generates filenames.
-
-```bash
-# Requires FIRECRAWL_API_KEY environment variable
-
-# Basic usage - saves to 00_Inbox/Clippings/
-.scripts/firecrawl-batch.sh <url1> <url2> <url3>
-
-# Custom output directory
-.scripts/firecrawl-batch.sh -o 10_Projects/Research/ <url1> <url2>
-.scripts/firecrawl-batch.sh --output-dir 30_Resources/Articles/ <url1> <url2>
-```
-
-### Transcript Extraction
+### 字幕提取
 
 #### transcript-extract.sh
 
-Extracts transcripts from YouTube videos.
+从 YouTube 视频中提取字幕。
 
 ```bash
-# Basic usage - saves to 00_Inbox/Clippings/
+# 基本用法 - 保存到 00_Inbox/Clippings/
 .scripts/transcript-extract.sh <youtube-url>
 
-# Custom output directory
+# 自定义输出目录
 .scripts/transcript-extract.sh <youtube-url> 10_Projects/Research/
 ```
 
-## NPM Scripts
+### Vault 统计
 
-Run these from the vault root with `pnpm`:
+#### vault-stats.sh
 
-| Command                        | Description                           |
-| ------------------------------ | ------------------------------------- |
-| `attachments:list`             | Show first 20 unprocessed attachments |
-| `attachments:count`            | Count unprocessed attachments         |
-| `attachments:organized`        | Count files in Organized folder       |
-| `attachments:unprocessed`      | Same as count                         |
-| `attachments:refs <file>`      | Find references to a specific file    |
-| `attachments:sizes`            | Show 20 largest attachment files      |
-| `attachments:orphans`          | Find unreferenced attachments         |
-| `attachments:recent`           | Show files added in last 7 days       |
-| `attachments:create-organized` | Create the Organized subfolder        |
+显示 vault 的统计信息，包括各目录的文件数量。
 
-## Setup Requirements
+```bash
+.scripts/vault-stats.sh
+```
 
-### For Web Scraping
+## 安装要求
 
-1. Get a Firecrawl API key from [firecrawl.dev](https://firecrawl.dev)
-2. Add to your shell profile:
-   ```bash
-   export FIRECRAWL_API_KEY="your-key-here"
-   ```
+### 字幕提取功能
 
-### For Transcript Extraction
+需要安装 `yt-dlp` 和 `jq`：
 
-- Requires `yt-dlp` and `jq` installed:
+```bash
+# macOS
+brew install yt-dlp jq
 
-  ```bash
-  # macOS
-  brew install yt-dlp jq
+# Linux
+apt-get install yt-dlp jq
 
-  # Linux
-  apt-get install yt-dlp jq
-  ```
+# Windows (WSL)
+sudo apt-get install yt-dlp jq
+```
 
-## Adding Custom Scripts
+## 添加自定义脚本
 
-1. Create script in `.scripts/`
-2. Make it executable: `chmod +x .scripts/your-script.sh`
-3. Add npm script to `package.json` if needed
-4. Document here
+1. 在 `.scripts/` 目录中创建脚本
+2. 添加可执行权限：`chmod +x .scripts/your-script.sh`
+3. 在此文档中记录脚本用法
 
-## Notes
+## 注意事项
 
-- Scripts assume Unix-like environment (macOS/Linux)
-- Windows users may need WSL or Git Bash
-- All paths are relative to vault root
-- Check script comments for additional requirements
+- 脚本假设为类 Unix 环境（macOS/Linux）
+- Windows 用户可能需要 WSL 或 Git Bash
+- 所有路径都是相对于 vault 根目录的
+- 查看脚本注释以了解额外要求

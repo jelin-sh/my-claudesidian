@@ -18,17 +18,7 @@ My-Claudesidian 是一个预配置的 Obsidian vault 结构，专为与 Claude C
 ### 必需工具
 
 - **[Git](https://git-scm.com/)** - 版本控制系统
-- **[Node.js](https://nodejs.org/)** - JavaScript 运行环境（建议 18.x 或更高版本）
-- **[pnpm](https://pnpm.io/)** - 快速的包管理器
-
-#### 安装 pnpm
-
-如果你还没有安装 pnpm，可以通过以下命令安装：
-
-```bash
-npm install -g pnpm
-```
-
+- **[Obsidian](https://obsidian.md/)** - 笔记应用
 
 ## 快速开始
 
@@ -48,13 +38,7 @@ cd my-vault
 2. 点击"Code" → "Download ZIP"
 3. 解压到你想要的位置
 
-### 2. 安装依赖
-
-```bash
-pnpm install
-```
-
-### 3. 运行设置向导
+### 2. 运行设置向导
 
 ```bash
 # 在项目目录中启动 Claude Code
@@ -144,30 +128,14 @@ my-claudesidian/
 
 ## 辅助脚本
 
-通过 `pnpm` 运行这些实用脚本：
+项目包含一些实用的 Bash 脚本：
 
 ```bash
-# 设置和维护
-pnpm setup              # 安装并验证设置
-pnpm lint               # 修复并检查代码风格
-pnpm lint:check         # 检查风格但不修复
-pnpm format             # 使用 Prettier 格式化
-
 # Vault 统计
-pnpm vault:stats        # 显示 vault 统计信息
+.scripts/vault-stats.sh               # 显示 vault 统计信息
 
-# 附件管理
-pnpm attachments:list         # 列出未处理的附件
-pnpm attachments:count        # 计算未处理的附件数量
-pnpm attachments:organized    # 计算已组织的文件数量
-pnpm attachments:orphans      # 查找未引用的附件
-pnpm attachments:sizes        # 查找大附件
-pnpm attachments:refs <pattern>  # 查找对附件的引用
-pnpm attachments:recent       # 显示最近的附件
-pnpm attachments:create-organized  # 创建 Organized 子文件夹
-
-# 更新检查
-pnpm check-updates       # 检查更新的 claudesidian 版本
+# 字幕提取
+.scripts/transcript-extract.sh        # 从 YouTube 视频提取字幕
 ```
 
 ## 技能（Skills）

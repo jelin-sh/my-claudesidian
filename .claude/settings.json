@@ -6,10 +6,6 @@
           {
             "type": "command",
             "command": "[ -f FIRST_RUN ] && echo '{\"hookSpecificOutput\":{\"hookEventName\":\"SessionStart\",\"additionalContext\":\"\\n\\n# 🚀 欢迎使用 My-Claudesidian！\\n\\n**这似乎是你第一次使用这个 vault。**\\n\\n## 快速开始\\n\\n运行设置向导：\\n\\n⬇\\n/init-bootstrap\\n⬆\\n\\n## 这将做什么：\\n\\n✅ 设置你的个性化配置\\n✅ 从原始仓库断开连接\\n✅ 帮助你导入现有的 Obsidian vault\\n✅ 配置你偏好的工作流\\n✅ 创建你的 PARA 文件夹结构\\n\\n设置向导将引导你完成所有步骤！\\n\\n\"}}' || true"
-          },
-          {
-            "type": "command",
-            "command": "npm run check-updates --silent 2>/dev/null || true"
           }
         ]
       }
