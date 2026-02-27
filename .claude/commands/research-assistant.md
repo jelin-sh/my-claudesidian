@@ -63,9 +63,9 @@ findings.
 3. Experiments to try
 ```
 
-## Tips
+## 提示
 
-- Cast a wide net initially, then focus
-- Look for surprising connections
-- Don't ignore contradictions - they're often where insights live
-- Always suggest concrete next actions
+- 最初要广泛撒网，然后再聚焦
+- 寻找意想不到的连接
+- 不要忽视矛盾 - 洞见往往存在于矛盾之处
+- 始终建议具体的下一步行动

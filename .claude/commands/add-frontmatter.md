@@ -196,5 +196,6 @@ status: complete
 Had a great meeting with the team about Q1 planning...
 ```
 
-Remember: Properties should enhance organization, not clutter. Only add what
-provides value for finding and connecting notes.
+## 记住
+
+属性应该增强组织性，而不是造成混乱。只添加那些对查找和连接笔记有价值的属性。

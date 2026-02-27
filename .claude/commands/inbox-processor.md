@@ -47,8 +47,8 @@ Provide a clear action plan:
 3. Items to delete
 4. Items needing more context
 
-## Remember
+## 记住
 
-- Some items legitimately belong in the Inbox (daily notes, quick captures)
-- Don't over-organize - sometimes "good enough" is perfect
-- Look for opportunities to connect ideas, not just file them
+- 有些项目确实属于收件箱（每日笔记、快速捕捉）
+- 不要过度组织 - 有时"足够好"就是完美
+- 寻找连接想法的机会，而不仅仅是归档它们

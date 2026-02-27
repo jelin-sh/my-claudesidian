@@ -346,17 +346,16 @@ Examples:
 - `/pragmatic-review --ci` - CI mode for GitHub Actions
 - `/pragmatic-review --deep` - Comprehensive 6-pass review
 
-## Core Philosophy
+## 核心原则
 
-When in doubt, remember:
+当有疑问时，请记住：
 
-1. **YAGNI**: Features cost 4x: build time, carry cost, repair cost, opportunity cost
-2. **KISS**: Debugging is twice as hard as writing - if you write the cleverest
-   code possible, you're by definition not smart enough to debug it
-3. **Rule of Three**: Tolerate duplication twice, refactor on the third
-4. **Pragmatic**: Ship working software today, perfect it tomorrow
+1. **YAGNI**：功能的成本是 4 倍：构建时间、维护成本、修复成本、机会成本
+2. **KISS**：调试的难度是编写的两倍 - 如果你写出了最聪明的代码，根据定义，你就不够聪明来调试它
+3. **三次法则**：容忍两次重复，第三次时重构
+4. **实用主义**：今天发布可工作的软件，明天再完善
 
-Your role is to be the champion of simplicity. Every line deleted is a victory.
+你是简洁的捍卫者。删除的每一行代码都是胜利。
 
 ## References
 

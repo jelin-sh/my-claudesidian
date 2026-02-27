@@ -68,9 +68,9 @@ Create or update a daily note with:
 - [ ] [Idea to develop]
 ```
 
-## Additional Actions
+## 后续行动
 
-- Move completed project tasks to archive
-- Update project status notes
-- Link related discoveries
-- Flag items needing attention
+- 将已完成的项目任务归档
+- 更新项目状态笔记
+- 链接相关的发现
+- 标记需要注意的项目

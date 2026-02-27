@@ -96,9 +96,9 @@ Create a weekly synthesis note:
 - Missing connections: [identified]
 ```
 
-## Follow-up Actions
+## 后续行动
 
-- Archive completed projects
-- Clean up inbox
-- Update project status
-- Plan next week's focus
+- 归档已完成的项目
+- 清理收件箱
+- 更新项目状态
+- 规划下周重点

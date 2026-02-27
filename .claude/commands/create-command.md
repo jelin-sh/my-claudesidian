@@ -63,13 +63,13 @@ Brief description of what this command does.
 \`\`\` claude run [command-name] [arguments] \`\`\`
 ```
 
-## Best Practices
+## 最佳实践
 
-- Keep commands focused on one task
-- Use clear, descriptive names
-- Include example usage
-- Document required arguments
-- Specify output format
-- List needed tools in frontmatter
+- 保持命令专注于单一任务
+- 使用清晰、描述性的名称
+- 包含使用示例
+- 记录所需的参数
+- 指定输出格式
+- 在 frontmatter 中列出所需的工具
 
-Let me help you create your command!
+让我帮你创建你的命令！

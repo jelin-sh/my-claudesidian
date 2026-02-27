@@ -122,10 +122,10 @@ git push
 5. Update index and references
 6. Commit and push changes
 
-## Tips
+## 提示
 
-- For multiple URLs, process them in batch for efficiency
-- Use Gemini Vision for batch image analysis (up to 3 at once)
-- Extract meaningful context from PDFs before renaming
-- Preserve original file extensions
-- Keep filenames concise but descriptive (max 60 chars)
+- 对于多个 URL，批量处理以提高效率
+- 使用 Gemini Vision 批量分析图像（一次最多 3 张）
+- 在重命名之前从 PDF 中提取有意义的上下文
+- 保留原始文件扩展名
+- 保持文件名简洁但具有描述性（最多 60 个字符）

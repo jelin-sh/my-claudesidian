@@ -1,106 +1,106 @@
-# Claude Code Commands
+# Claude Code 命令
 
-Pre-configured commands to enhance your Claude Code + Obsidian workflow.
+预配置的命令，用于增强你的 Claude Code + Obsidian 工作流。
 
-## Available Commands
+## 可用命令
 
 ### 🤔 thinking-partner
 
-Engage Claude as a thinking partner for exploring complex problems.
+让 Claude 成为你的思考伙伴，共同探索复杂问题。
 
 ```
 /thinking-partner
 ```
 
-Best for: Brainstorming, problem exploration, developing ideas
+最适合：头脑风暴、问题探索、发展想法
 
 ### 📥 inbox-processor
 
-Process and organize items in your Inbox folder.
+处理和组织收件箱文件夹中的项目。
 
 ```
 /inbox-processor
 ```
 
-Best for: Weekly inbox cleanup, organizing captures
+最适合：每周收件箱清理、整理捕捉的内容
 
 ### 🔍 research-assistant
 
-Conduct thorough research on any topic using your vault.
+使用你的 vault 对任何主题进行深入研究。
 
 ```
 /research-assistant
 ```
 
-Best for: Deep dives, literature reviews, knowledge synthesis
+最适合：深度挖掘、文献综述、知识综合
 
 ### 📅 daily-review
 
-End-of-day review to capture progress and plan tomorrow.
+每日回顾，捕捉进展并规划明天。
 
 ```
 /daily-review
 ```
 
-Best for: Daily shutdown ritual, reflection
+最适合：每日结束仪式、反思
 
 ### 📊 weekly-synthesis
 
-Create a comprehensive synthesis of the week's work.
+创建一周工作的综合总结。
 
 ```
 /weekly-synthesis
 ```
 
-Best for: Weekly reviews, pattern recognition
+最适合：每周回顾、模式识别
 
-## Creating Custom Commands
+## 创建自定义命令
 
-1. Create a new `.md` file in this directory
-2. Name it descriptively (kebab-case)
-3. Structure it with:
-   - Clear role definition
-   - Specific process steps
-   - Expected output format
-   - Tips and constraints
+1. 在此目录中创建新的 `.md` 文件
+2. 使用描述性名称（kebab-case 格式）
+3. 按以下结构组织：
+   - 清晰的角色定义
+   - 具体的流程步骤
+   - 预期的输出格式
+   - 提示和约束
 
-## Using Commands
+## 使用命令
 
-### Method 1: Direct (in Claude Code)
+### 方法 1：直接调用（在 Claude Code 中）
 
 ```
 /[command-name]
 ```
 
-### Method 2: Reference in Chat
+### 方法 2：在聊天中引用
 
 ```
 Use the thinking-partner command to help me explore [topic]
 ```
 
-### Method 3: Manual
+### 方法 3：手动执行
 
 ```
 Follow the instructions in .claude/commands/[command].md
 ```
 
-## Tips
+## 提示
 
-- Commands are just structured prompts
-- Modify them based on your needs
-- Combine commands for complex workflows
-- Share your custom commands with the community
+- 命令本质上是结构化的提示词
+- 根据你的需求进行修改
+- 组合命令以处理复杂工作流
+- 与社区分享你的自定义命令
 
-## Command Ideas
+## 命令创意
 
-Consider creating commands for:
+考虑为以下场景创建命令：
 
-- Project retrospectives
-- Meeting notes processing
-- Book notes extraction
-- Idea development
-- Content planning
-- Learning path creation
-- Decision analysis
+- 项目回顾
+- 会议笔记处理
+- 书籍笔记提取
+- 想法发展
+- 内容规划
+- 学习路径创建
+- 决策分析
 
-Remember: The best commands emerge from your actual workflows.
+记住：最好的命令来自你的实际工作流程。

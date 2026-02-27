@@ -274,18 +274,15 @@ Safety measures:
 
 If anything goes wrong, restore from: `$CONFIG_FILE.backup-YYYYMMDD-HHMMSS`
 
-## Important Notes
+## 重要提示
 
-- The command uses a subshell `()` (or `cd -` in Fish) so it returns to your
-  original directory after
-- Automatically tries to resume existing sessions, falls back to new session
-- If alias/function already exists, asks user if they want to replace it
-- Always shows what will be added before modifying config files
-- **Always creates timestamped backup** of config file before modifying (format:
-  `YYYYMMDD-HHMMSS`)
-- Backups are kept indefinitely - users can manually clean up old backups if
-  needed
-- Shows backup location so users know where to restore from if needed
+- 命令使用子shell `()`（Fish 中为 `cd -`），完成后会返回到原始目录
+- 自动尝试恢复现有会话，如果没有则创建新会话
+- 如果别名/函数已存在，会询问用户是否要替换
+- 在修改配置文件之前始终显示将要添加的内容
+- **始终在修改前创建带时间戳的备份**（格式：`YYYYMMDD-HHMMSS`）
+- 备份会永久保留 - 用户可以根据需要手动清理旧备份
+- 显示备份位置，以便用户在需要时知道从哪里恢复
 
 ## Usage Examples
 
