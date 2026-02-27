@@ -54,8 +54,6 @@ claude
 - 询问你的工作流偏好
 - 创建个性化的 CLAUDE.md 配置
 - 设置你的文件夹结构
-- 可选：配置 Gemini Vision 用于图像/视频分析
-- 可选：配置 Firecrawl 用于网络研究
 - 初始化 Git 进行版本控制
 
 ### 3. 在 Obsidian 中打开（可选但推荐）
@@ -188,56 +186,6 @@ Claudesidian 在你启动 Claude Code 时会自动检查更新，并在有新功
 - 逐个文件的审查和确认
 - 在 `.upgrade-checklist.md` 中跟踪进度
 - 可以随时停止和恢复
-
-## 视觉和文档分析（可选）
-
-配置了 [Google Gemini](https://ai.google.dev/) MCP 后，Claude Code 可以直接处理你的附件而无需描述它们。这意味着：
-
-- **直接图像分析**：Claude 看到实际图像，而不是你的描述
-- **PDF 文本提取**：完整文档文本，无需复制粘贴
-- **批量处理**：一次分析多个截图或文档
-- **智能组织**：基于图像内容自动生成文件名
-- **比较任务**：比较前后截图、设计等
-
-**为什么这很重要**：无需描述"显示错误消息的截图"，Claude Code 直接看到并读取错误。非常适合调试 UI 问题、分析图表或处理扫描文档。
-
-**获取 Gemini API 密钥：**
-
-1. 访问 [Google AI Studio](https://aistudio.google.com)
-2. 使用你的 Google 账户登录
-3. 点击左侧边栏中的"Get API key"
-4. 创建新的 API 密钥（它是免费的！）
-5. 在你的环境中设置：`export GEMINI_API_KEY="your-key-here"`
-
-## 网络研究（可选）
-
-配置了 [Firecrawl](https://www.firecrawl.dev/) 后，我们的辅助脚本会获取并将完整的网页内容直接保存到你的 vault。这意味着：
-
-- **完整文本捕获**：脚本将完整的文章文本传递给文件，而不是摘要
-- **上下文保留**：Claude 不需要在内存中保存网页内容
-- **批量处理**：使用 `firecrawl-batch.sh` 一次保存多篇文章
-- **清洁的 markdown**：网页转换为可读、可搜索的 markdown
-- **永久归档**：你的研究永远保留在你的 vault 中
-
-**为什么这很重要**：不是 Claude 阅读网页并总结（丢失细节），脚本保存完整文本。Claude 可以搜索和分析数千篇保存的文章，而不会遇到上下文限制。非常适合研究项目、文档归档或构建知识库。
-
-**示例工作流：**
-
-```bash
-# 保存单篇文章
-pnpm run firecrawl:scrape -- "https://example.com/article" "30_Resources/Articles"
-
-# 批量保存多个 URL
-pnpm run firecrawl:batch -- urls.txt "30_Resources/Research"
-```
-
-**获取 Firecrawl API 密钥：**
-
-1. 访问 [Firecrawl](https://www.firecrawl.dev) 并注册
-2. 获得 300 个免费积分开始（开源，可以自托管）
-3. 转到你的仪表板找到你的 API 密钥
-4. 复制密钥（格式：`fc-xxxxx...`）
-5. 在你的环境中设置：`export FIRECRAWL_API_KEY="fc-your-key-here"`
 
 ## 辅助脚本
 
