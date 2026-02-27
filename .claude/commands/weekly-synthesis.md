@@ -1,99 +1,99 @@
-# Weekly Synthesis
+# 每周综合
 
-Create a comprehensive synthesis of the week's work and thinking.
+创建一周工作和思考的综合总结。
 
-## Analysis Process
+## 分析流程
 
-1. **Gather Week's Work**
-   - All notes created this week
-   - All notes modified this week
-   - Projects that saw activity
+1. **收集一周工作**
+   - 本周创建的所有笔记
+   - 本周修改的所有笔记
+   - 有活动的项目
 
-2. **Identify Patterns**
-   - Recurring themes
-   - Common challenges
-   - Breakthrough moments
-   - Energy patterns (what energized vs drained)
+2. **识别模式**
+   - 反复出现的主题
+   - 常见挑战
+   - 突破时刻
+   - 能量模式（什么让人精力充沛 vs 消耗精力）
 
-3. **Synthesize Learning**
-   - Key insights that emerged
-   - How thinking evolved
-   - Connections discovered
-   - Questions answered and raised
+3. **综合学习**
+   - 出现的关键洞察
+   - 思维如何演变
+   - 发现的连接
+   - 已回答和提出的问题
 
-4. **Assess Progress**
-   - Projects advanced
-   - Areas maintained
-   - Resources added
-   - Items archived
+4. **评估进展**
+   - 推进的项目
+   - 维护的领域
+   - 添加的资源
+   - 归档的项目
 
-## Output Format
+## 输出格式
 
-Create a weekly synthesis note:
+创建每周综合笔记：
 
 ```markdown
-# Weekly Synthesis - Week of [Date]
+# 每周综合 - [日期]周
 
-## Week at a Glance
+## 一览
 
-- Notes created: [X]
-- Projects active: [List]
-- Major accomplishments: [List]
+- 创建笔记：[X]
+- 活跃项目：[列表]
+- 主要成就：[列表]
 
-## Key Themes
+## 关键主题
 
-### Theme 1: [Name]
+### 主题 1：[名称]
 
-- Where it appeared: [contexts]
-- Why it matters: [significance]
-- Next actions: [what to do]
+- 出现场合：[上下文]
+- 为何重要：[意义]
+- 后续行动：[做什么]
 
-### Theme 2: [Name]
+### 主题 2：[名称]
 
-- Where it appeared: [contexts]
-- Why it matters: [significance]
-- Next actions: [what to do]
+- 出现场合：[上下文]
+- 为何重要：[意义]
+- 后续行动：[做什么]
 
-## Major Insights
+## 主要洞察
 
-1. [Insight with context]
-2. [Insight with context]
+1. [有上下文的洞察]
+2. [有上下文的洞察]
 
-## Progress by Project
+## 按项目进展
 
-### [Project Name]
+### [项目名称]
 
-- What advanced:
-- What's blocked:
-- Next week's focus:
+- 推进内容：
+- 受阻内容：
+- 下周重点：
 
-## Questions Emerged
+## 出现的问题
 
-- [Question 1 - and why it matters]
-- [Question 2 - and why it matters]
+- [问题 1 - 及为何重要]
+- [问题 2 - 及为何重要]
 
-## Energy Audit
+## 能量审计
 
-- What gave energy:
-- What drained energy:
-- What to adjust:
+- 给予能量的事：
+- 消耗能量的事：
+- 需要调整的事：
 
-## Connections Made
+## 建立的连接
 
-- [Note A] ←→ [Note B]: [Why significant]
-- [Concept X] ←→ [Concept Y]: [New understanding]
+- [笔记 A] ←→ [笔记 B]：[为何重要]
+- [概念 X] ←→ [概念 Y]：[新理解]
 
-## Next Week's Intentions
+## 下周意图
 
-1. [Primary focus]
-2. [Secondary focus]
-3. [Thing to explore]
+1. [主要重点]
+2. [次要重点]
+3. [要探索的事]
 
-## To Process
+## 待处理
 
-- Inbox items: [count]
-- Orphaned notes: [list]
-- Missing connections: [identified]
+- 收件箱项目：[数量]
+- 孤立笔记：[列表]
+- 缺失的连接：[已识别]
 ```
 
 ## 后续行动

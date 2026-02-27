@@ -1,71 +1,71 @@
-# Daily Review
+# 每日回顾
 
-Conduct an end-of-day review to capture progress and set up tomorrow.
+在一天结束时进行回顾，记录进展并为明天做好准备。
 
-## Review Process
+## 回顾流程
 
-1. **Today's Activity**
-   - Find all notes modified today
-   - Identify new notes created
-   - Review work across all projects
+1. **今日活动**
+   - 查找今天修改的所有笔记
+   - 识别创建的新笔记
+   - 审查所有项目的工作
 
-2. **Progress Assessment**
-   - What was accomplished?
-   - What got stuck or blocked?
-   - What unexpected discoveries emerged?
+2. **进展评估**
+   - 完成了什么？
+   - 遇到了什么阻碍或阻塞？
+   - 出现了什么意外的发现？
 
-3. **Capture Insights**
-   - Key learnings from today
-   - New connections discovered
-   - Questions that arose
+3. **捕捉洞察**
+   - 今天的关键学习
+   - 发现的新连接
+   - 提出的问题
 
-4. **Tomorrow's Setup**
-   - Top 3 priorities
-   - Open loops to close
-   - Questions to explore
+4. **明天准备**
+   - 前 3 项优先事项
+   - 需要完成的未闭环
+   - 需要探索的问题
 
-## Output Format
+## 输出格式
 
-Create or update a daily note with:
+创建或更新每日笔记：
 
 ```markdown
-# Daily Review - [Date]
+# 每日回顾 - [日期]
 
-## Accomplished
+## 已完成
 
-- ✓ [Completed item 1]
-- ✓ [Completed item 2]
+- ✓ [已完成项目 1]
+- ✓ [已完成项目 2]
 
-## Progress Made
+## 取得进展
 
-- [Project/Area]: [What moved forward]
-- [Project/Area]: [What moved forward]
+- [项目/领域]：[推进内容]
+- [项目/领域]：[推进内容]
 
-## Insights
+## 洞察
 
-- [Key realization or connection]
-- [Important learning]
+- [关键认识或连接]
+- [重要学习]
 
-## Blocked/Stuck
+## 受阻/停滞
 
-- [What didn't progress and why]
+- [未取得进展的内容及原因]
 
-## Discovered Questions
+## 发现的问题
 
-- [New question that emerged]
-- [Thing to research]
+- [出现的新问题]
+- [需要研究的内容]
 
-## Tomorrow's Focus
+## 明日重点
 
-1. [Priority 1]
-2. [Priority 2]
-3. [Priority 3]
+1. [优先事项 1]
+2. [优先事项 2]
+3. [优先事项 3]
 
-## Open Loops
+## 未闭环项
 
-- [ ] [Thing to remember]
-- [ ] [Person to follow up with]
-- [ ] [Idea to develop]
+- [ ] [需要记住的事项]
+- [ ] [需要跟进的人]
+- [ ] [需要发展的想法]
 ```
 
 ## 后续行动
