@@ -1,240 +1,238 @@
-# Obsidian Vault Guidelines - Bootstrap Template
+# Obsidian Vault 指南 - Bootstrap 模板
 
-**Getting Started with Claude Code + Obsidian**
+**Claude Code + Obsidian 入门**
 
-## Quick Setup
+## 快速设置
 
-1. **Start every session**: Run `git pull` to sync latest changes
-2. **After changes**: Commit and push to preserve your work
-3. **Use built-in tools**: Prefer WebSearch and WebFetch for web content
+1. **每次会话开始**：运行 `git pull` 同步最新更改
+2. **更改后**：提交并推送以保留你的工作
+3. **使用内置工具**：优先使用 WebSearch 和 WebFetch 获取网页内容
 
-## Version Control Best Practices
+## 版本控制最佳实践
 
-**CRITICAL - START EVERY SESSION**: Always run `git pull` at the beginning of
-each new Claude session to ensure you have the latest changes from the remote
-repository.
+**关键 - 每次会话开始**：始终在每个新 Claude 会话开始时运行 `git pull`，以确保你拥有远程仓库的最新更改。
 
-**Commit workflow**:
+**提交流程**：
 
-- After creating new notes: `git add .` → `git commit -m "message"` → `git push`
-- After significant edits: Commit and push immediately
-- Use `git status` to check for modifications
-- When agents modify files: Always commit those changes
+- 创建新笔记后：`git add .` → `git commit -m "message"` → `git push`
+- 重要编辑后：立即提交并推送
+- 使用 `git status` 检查修改
+- 当代理修改文件时：始终提交这些更改
 
-## Folder Structure (PARA Method)
+## 文件夹结构（PARA 方法）
 
 ```
 vault/
-├── 00_Inbox/           # Temporary capture point
-├── 01_Projects/        # Time-bound initiatives
-├── 02_Areas/           # Ongoing responsibilities
-├── 03_Resources/       # Reference materials
-├── 04_Archive/         # Completed/inactive items
-├── 05_Attachments/     # Images, PDFs, etc.
-│   └── Organized/      # Processed attachments
-└── 06_Metadata/        # Documentation & templates
-    ├── Reference/      # Guides and standards
-    ├── Plans/          # Strategic documents
-    └── Templates/      # Reusable structures
+├── 00_Inbox/           # 临时捕捉点
+├── 10_Projects/        # 有时间限制的倡议
+├── 20_Areas/           # 持续责任
+├── 30_Resources/       # 参考材料
+├── 40_Archive/         # 已完成/非活动项目
+├── 50_Attachments/     # 图像、PDF 等
+│   └── Organized/      # 已处理的附件
+└── 60_Metadata/        # 文档和模板
+    ├── Reference/      # 指南和标准
+    ├── Plans/          # 战略文档
+    └── Templates/      # 可重用结构
 ```
 
-## PARA Method Details
+## PARA 方法详情
 
-### Projects (01)
+### Projects (10)
 
-- Time-bound initiatives with clear completion criteria
-- Examples: Writing a paper, developing a presentation
-- Recommended subfolders: Research/, Drafts/, References/, Output/
+- 具有明确完成标准的有时间限制的倡议
+- 示例：撰写论文、开发演示文稿
+- 建议的子文件夹：Research/、Drafts/、References/、Output/
 
-### Areas (02)
+### Areas (20)
 
-- Ongoing responsibilities without end dates
-- Examples: Health, Finances, Professional Development
-- Create dedicated notes with links to related resources
+- 没有结束日期的持续责任
+- 示例：健康、财务、职业发展
+- 创建包含相关资源链接的专用笔记
 
-### Resources (03)
+### Resources (30)
 
-- Topics of interest for reference
-- Knowledge bases organized by subject
-- Use for information not tied to specific projects
+- 感兴趣的主题供参考
+- 按主题组织的知识库
+- 用于不与特定项目绑定的信息
 
-### Archive (04)
+### Archive (40)
 
-- Completed or inactive items
-- Maintain same folder structure as active sections
-- Review periodically for reactivation
+- 已完成或非活动的项目
+- 保持与活动部分相同的文件夹结构
+- 定期审查以重新激活
 
-## Inbox Management
+## 收件箱管理
 
-### Core Principles
+### 核心原则
 
-- Inbox is temporary, not permanent storage
-- Process weekly using Capture → Process → Organize workflow
-- Maintain <20 items at any time
+- 收件箱是临时的，不是永久存储
+- 使用 捕捉 → 处理 → 组织 工作流每周处理
+- 随时保持 <20 个项目
 
-### Files to Keep in Inbox
+### 保留在收件箱中的文件
 
-- **CRITICAL**: Files with number prefixes (00-06) stay permanently
-- Recent daily/weekly summaries (last 3 months)
-- Active notes being processed
+- **关键**：带编号前缀（00、10-60）的文件永久保留
+- 最近的每日/每周摘要（最近 3 个月）
+- 正在处理的活跃笔记
 
-### Processing Workflow
+### 处理工作流
 
-1. Delete obsolete information
-2. Move relevant material to PARA locations
-3. Convert actions into project tasks
-4. Tag items needing more processing with `#needs-processing`
+1. 删除过时信息
+2. 将相关材料移到 PARA 位置
+3. 将行动转换为项目任务
+4. 用 `#needs-processing` 标记需要更多处理的项目
 
-## File Organization Guidelines
+## 文件组织指南
 
-### Naming Conventions
+### 命名约定
 
-- Daily notes: `YYYY-MM-DD - Topic`
-- Meeting notes: `Meeting - [Topic] - YYYY-MM-DD`
-- Ideas: `Idea - [Brief Description]`
-- Resources: `Resource - [Topic] - [Source]`
+- 每日笔记：`YYYY-MM-DD - 主题`
+- 会议笔记：`会议 - [主题] - YYYY-MM-DD`
+- 想法：`想法 - [简短描述]`
+- 资源：`资源 - [主题] - [来源]`
 
-### Movement Rules
+### 移动规则
 
-- Use `mv` command (not `cp`) to avoid duplicates
-- Verify destination folders exist first
-- Update internal links after moves
-- Add YAML frontmatter when organizing
+- 使用 `mv` 命令（不是 `cp`）以避免重复
+- 首先验证目标文件夹存在
+- 移动后更新内部链接
+- 组织时添加 YAML frontmatter
 
-## Attachments Management
+## 附件管理
 
-### Organization
+### 组织
 
-- Store all non-text files in `05_Attachments/`
-- Processed files → `05_Attachments/Organized/`
-- Naming: `[RelatedNote]_[Description].[ext]`
+- 将所有非文本文件存储在 `50_Attachments/` 中
+- 已处理的文件 → `50_Attachments/Organized/`
+- 命名：`[相关笔记]_[描述].[扩展名]`
 
-### Helper Scripts
+### 辅助脚本
 
 ```bash
-pnpm attachments:list        # List unprocessed files
-pnpm attachments:organized   # Count organized files
-pnpm attachments:orphans     # Find unreferenced files
-pnpm attachments:update-links # Update links after moving
+pnpm attachments:list        # 列出未处理的文件
+pnpm attachments:organized   # 计算已组织的文件
+pnpm attachments:orphans     # 查找未引用的文件
+pnpm attachments:update-links # 移动后更新链接
 ```
 
-## Web Content Workflow
+## 网页内容工作流
 
-### Built-in Tools (Preferred)
+### 内置工具（首选）
 
-- **WebSearch**: For general web searches
-- **WebFetch**: For specific URLs
-- Save to appropriate folder based on content type
+- **WebSearch**：用于一般网页搜索
+- **WebFetch**：用于特定 URL
+- 根据内容类型保存到适当的文件夹
 
-### Custom Scripts (When Needed)
+### 自定义脚本（需要时）
 
-- Single URL: `pnpm firecrawl:scrape <url> <output>`
-- Batch URLs: `pnpm firecrawl:batch <url1> <url2>`
-- Saves to `00_Inbox/Clippings/` with frontmatter
+- 单个 URL：`pnpm firecrawl:scrape <url> <output>`
+- 批量 URL：`pnpm firecrawl:batch <url1> <url2>`
+- 使用 frontmatter 保存到 `00_Inbox/Clippings/`
 
-## Writing Style Guidelines
+## 写作风格指南
 
-### Structure
+### 结构
 
-- Use `[[WikiLinks]]` for internal references
-- Include YAML frontmatter (dates, tags, status)
-- Consistent Markdown formatting
-- Specific, consistent tags
+- 使用 `[[WikiLinks]]` 进行内部引用
+- 包含 YAML frontmatter（日期、标签、状态）
+- 一致的 Markdown 格式
+- 具体、一致的标签
 
-### Style Preferences
+### 风格偏好
 
-- Direct and confident statements
-- Avoid clichéd transitions
-- Let statements stand on their own
-- No unnecessary lead-ins
+- 直接和自信的陈述
+- 避免陈词滥调的过渡
+- 让陈述独立存在
+- 没有不必要的引导
 
-## AI Assistant Guidelines
+## AI 助手指南
 
-### Before Any Organization
+### 任何组织之前
 
-1. Map complete folder structure: `find . -type d | sort`
-2. Document in `06_Metadata/STRUCTURE.md`
-3. Verify all destination folders exist
+1. 映射完整的文件夹结构：`find . -type d | sort`
+2. 在 `60_Metadata/STRUCTURE.md` 中记录
+3. 验证所有目标文件夹存在
 
-### Working with Content
+### 处理内容
 
-- Respect numbered core files (never move 00-06 prefixed files)
-- Always use `mv` not `cp` when organizing
-- Preserve and update bidirectional links
-- Add appropriate YAML frontmatter
+- 尊重编号的核心文件（永远不要移动 00、10-60 前缀的文件）
+- 组织时始终使用 `mv` 而不是 `cp`
+- 保留并更新双向链接
+- 添加适当的 YAML frontmatter
 
-### Simple Commands Only
+### 仅使用简单命令
 
-- **REQUIRED**: Direct, basic commands without filtering
-- **FORBIDDEN**: Complex regex, piped commands, find with filters
-- Example RIGHT: `ls -1` then manually select files
-- Example WRONG: `ls | grep pattern` or `find . -name "*.png"`
+- **必需**：直接的、基本的命令，无需过滤
+- **禁止**：复杂的正则表达式、管道命令、带过滤器的 find
+- 正确示例：`ls -1` 然后手动选择文件
+- 错误示例：`ls | grep pattern` 或 `find . -name "*.png"`
 
-## Daily Workflows
+## 每日工作流
 
-### Start of Day
+### 一天开始
 
-1. Run `git pull`
-2. Check inbox for items to process
-3. Review active projects
+1. 运行 `git pull`
+2. 检查收件箱中的待处理项目
+3. 审查活跃项目
 
-### End of Day
+### 一天结束
 
-1. Process new inbox items
-2. Commit and push changes
-3. Update project notes
+1. 处理新的收件箱项目
+2. 提交并推送更改
+3. 更新项目笔记
 
-### Weekly Review
+### 每周回顾
 
-1. Process entire inbox
-2. Archive completed projects
-3. Update area notes
-4. Review and consolidate resources
+1. 处理整个收件箱
+2. 归档已完成的项目
+3. 更新领域笔记
+4. 审查和整合资源
 
-## Project Lifecycle
+## 项目生命周期
 
-### Starting a Project
+### 启动项目
 
-1. Create folder in `01_Projects/[ProjectName]`
-2. Add subfolders: Research/, Drafts/, Output/
-3. Create README with objectives and timeline
+1. 在 `10_Projects/[项目名称]` 中创建文件夹
+2. 添加子文件夹：Research/、Drafts/、Output/
+3. 创建包含目标和时间线的 README
 
-### During Project
+### 项目进行中
 
-- Keep all related materials in project folder
-- Link to relevant resources and areas
-- Regular commits to track progress
+- 将所有相关材料保留在项目文件夹中
+- 链接到相关资源和领域
+- 定期提交以跟踪进度
 
-### Completing a Project
+### 完成项目
 
-1. Create project summary note
-2. Move entire folder to `04_Archive/`
-3. Update relevant area notes
-4. Commit with completion message
+1. 创建项目摘要笔记
+2. 将整个文件夹移到 `40_Archive/`
+3. 更新相关领域笔记
+4. 使用完成消息提交
 
-## Best Practices
+## 最佳实践
 
-### Organization
+### 组织
 
-- Keep folder structure shallow (max 3 levels)
-- Create subfolders only with 7+ related notes
-- Use linking over deep nesting
-- Include README in major folders
+- 保持文件夹结构浅层（最多 3 层）
+- 只有 7 个以上相关笔记时才创建子文件夹
+- 使用链接而不是深度嵌套
+- 在主要文件夹中包含 README
 
-### Content Creation
+### 内容创建
 
-- Capture first, organize later
-- One idea per note
-- Link generously
-- Tag consistently
+- 先捕捉，后组织
+- 每个笔记一个想法
+- 大量使用链接
+- 一致地标记
 
-### Maintenance
+### 维护
 
-- Weekly inbox processing
-- Monthly project reviews
-- Quarterly archive cleanup
-- Regular git commits
+- 每周收件箱处理
+- 每月项目审查
+- 每季度归档清理
+- 定期 git 提交
 
 ---
 
-_This is a bootstrap template. Customize based on your workflow and needs._
+_这是一个 bootstrap 模板。根据你的工作流和需求进行自定义。_
