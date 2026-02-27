@@ -102,32 +102,7 @@ argument-hint: "(optional) path to existing vault or 'new' for fresh setup"
    - "你想要每周回顾仪式吗？（例如，周四项目回顾）"
    - "你偏好'思考模式'（问题/探索）还是'写作模式'？"
 
-5. **可选工具设置**
-
-   **Gemini Vision（已包含）**
-   - 询问："Gemini Vision 已包含用于分析图片、PDF 和视频。
-     你想激活它吗？（是/否/稍后）"
-   - 解释："你只需要从 Google 获取免费的 API 密钥。这让 Claude 可以分析你 vault 中的任何视觉内容。"
-   - 如果稍后："没问题！你可以随时运行 `/setup-gemini` 设置"
-   - 如果是：
-     - 引导从 https://aistudio.google.com/apikey 获取 API 密钥（免费，需要 30 秒）
-     - 帮助添加到 shell 配置文件（.zshrc、.bashrc 等）
-     - 运行
-       `claude mcp add --scope project gemini-vision node .claude/mcp-servers/gemini-vision.mjs`
-     - 用 API 密钥配置 .mcp.json
-     - 使用示例命令测试连接
-
-   **Firecrawl（已包含）**
-   - 询问："Firecrawl 已包含用于网络研究。你想设置它吗？（是/否/稍后）"
-   - 解释："这是研究的游戏规则改变者！当你找到文章或网站时，你可以直接将其保存为 markdown 到 vault - 永久保留内容，使其可搜索，并让 Claude 分析它。非常适合构建研究库。"
-   - 示例："只需告诉 Claude：'将这篇文章保存到我的 vault：[URL]' 就完成了！"
-   - 如果稍后："你可以随时运行 `/setup-firecrawl` 设置"
-   - 如果是：
-     - 引导从 https://firecrawl.dev 获取 API 密钥（有免费层）
-     - 帮助配置 .scripts/ 中的脚本
-     - 显示使用示例：`.scripts/firecrawl-scrape.sh https://example.com`
-
-6. **生成定制配置**
+5. **生成定制配置**
    - 获取当前日期：`date +"%B %d, %Y"` 用于 CLAUDE.md 标题
    - 将偏好保存到 `.claude/vault-config.json`：
      ```json
@@ -156,10 +131,6 @@ argument-hint: "(optional) path to existing vault or 'new' for fresh setup"
        "fileNamingPattern": "detected-pattern",
        "organizationMethod": "PARA",
        "primaryUses": ["research", "writing", "projects"],
-       "tools": {
-         "geminiVision": true,
-         "firecrawl": false
-       },
        "projects": ["书 - 生产力", "SaaS 应用"],
        "areas": ["简报", "健康"],
        "importedAt": "2025-01-13",
@@ -172,7 +143,6 @@ argument-hint: "(optional) path to existing vault or 'new' for fresh setup"
      - 个人工作流程
      - 首选工具和脚本
      - 特定指南
-     - 如果已设置，MCP 配置
    - 如果提供，包含他们的网站/资源
    - 添加任何自定义命名约定
    - 用他们的项目和领域预填充：
@@ -181,7 +151,7 @@ argument-hint: "(optional) path to existing vault or 'new' for fresh setup"
      - 在 30_Resources/ 中创建资源主题
      - 为每个项目/领域添加 README 文件
 
-7. **导入现有 Vault（如果适用）**
+6. **导入现有 Vault（如果适用）**
    - 如果用户有现有 vault：
      - 创建 OLD_VAULT 文件夹：`mkdir OLD_VAULT`
      - 完整复制 vault 保留结构：
@@ -195,7 +165,7 @@ argument-hint: "(optional) path to existing vault or 'new' for fresh setup"
      - 显示摘要："已将你的 vault 导入到 OLD_VAULT/（X 文件，Y 文件夹）"
      - 解释："你的原始结构在 OLD_VAULT 中保留。你可以根据需要逐步将文件迁移到 PARA 文件夹。"
 
-8. **创建支持文件**
+7. **创建支持文件**
    - 如果是新 vault，生成初始文件夹结构
    - 为主要文件夹创建 README 文件
    - 对于每个项目文件夹，创建子文件夹：
@@ -209,13 +179,12 @@ argument-hint: "(optional) path to existing vault or 'new' for fresh setup"
    - 如果存在，移除 FIRST_RUN 标记文件
    - 如果初始化了仓库，进行初始 git 提交
 
-9. **运行测试命令**
+8. **运行测试命令**
    - 执行 `pnpm vault:stats` 验证脚本工作
    - 如果文件夹存在，测试附件命令
-   - 如果配置了，测试 MCP 工具
    - 验证 git 正确跟踪文件
 
-10. **提供下一步**
+9. **提供下一步**
 
 - 创建和配置内容的摘要
 - 针对其设置的快速入门指南
@@ -271,14 +240,6 @@ argument-hint: "(optional) path to existing vault or 'new' for fresh setup"
 
 [与其工作流程相关的脚本]
 
-## MCP 服务器（如果配置）
-
-### Gemini Vision
-
-- 状态：✅ 已配置和测试
-- API 密钥：在 .mcp.json 中设置
-- 测试：`使用 gemini-vision 分析 [图片路径]`
-
 ## 可用命令
 
 ### Vault 管理
@@ -317,7 +278,6 @@ argument-hint: "(optional) path to existing vault or 'new' for fresh setup"
 ✅ Git 仓库已初始化并从原始仓库断开
 ✅ CLAUDE.md 已个性化
 ✅ 首次运行设置已完成
-[✅ MCP Gemini Vision 已配置 - 如果已设置]
 [✅ 首次提交已完成 - 如果初始化了 git]
 ```
 
@@ -787,31 +747,3 @@ Assistant: 设置资源文件夹：
 - 30_Resources/写作技巧/
 
 [继续问题...]
-
-**Gemini Vision 设置**
-Gemini Vision 已包含在 claudesidian 中！
-它可以分析你 vault 中的图片、PDF 和视频。
-要激活它，你只需要一个免费的 Google API 密钥（需要 30 秒）。
-你想现在设置吗？（是/否/稍后）
-
-User: 稍后
-
-没问题！你可以在准备好时随时运行 `/setup-gemini` 设置。
-
-**Firecrawl 设置**
-Firecrawl 是研究的游戏规则改变者！
-将任何文章或网站直接保存为 markdown 到你的 vault。
-非常适合构建永久、可搜索的研究库。
-你想设置它吗？（是/否/稍后）
-
-User: 是
-
-太好了！Firecrawl 将改变你收集研究的方式。
-
-Assistant: 太好了！以下是获取 API 密钥的方法：
-
-1. 访问 https://aistudio.google.com/apikey
-2. 点击"创建 API 密钥"
-3. 复制密钥（以 AIzaSy... 开头）
-
-一旦你有了它，在这里粘贴，我会为你配置一切。
