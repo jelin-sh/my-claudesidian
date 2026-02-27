@@ -20,13 +20,13 @@ with Claude Code, enabling you to:
 
 ```bash
 # Clone with your preferred folder name (replace 'my-vault' with any name you like)
-git clone https://github.com/heyitsnoah/claudesidian.git my-vault
+git clone https://github.com/jelin-sh/my-claudesidian.git my-vault
 cd my-vault
 
 # Examples:
-# git clone https://github.com/heyitsnoah/claudesidian.git obsidian-notes
-# git clone https://github.com/heyitsnoah/claudesidian.git knowledge-base
-# git clone https://github.com/heyitsnoah/claudesidian.git second-brain
+# git clone https://github.com/jelin-sh/my-claudesidian.git obsidian-notes
+# git clone https://github.com/jelin-sh/my-claudesidian.git knowledge-base
+# git clone https://github.com/jelin-sh/my-claudesidian.git second-brain
 ```
 
 **Option B: Download ZIP (no Git required)**

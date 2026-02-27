@@ -34,7 +34,7 @@ capabilities.
   ```bash
   # Use cut instead of sed to avoid zsh parentheses escaping issues
   CURRENT=$(grep '"version"' package.json | head -1 | cut -d'"' -f4)
-  LATEST=$(curl -s https://raw.githubusercontent.com/heyitsnoah/claudesidian/main/package.json | grep '"version"' | head -1 | cut -d'"' -f4)
+  LATEST=$(curl -s https://raw.githubusercontent.com/jelin-sh/my-claudesidian/main/package.json | grep '"version"' | head -1 | cut -d'"' -f4)
 
   if [ "$CURRENT" = "$LATEST" ]; then
     echo "✅ You're already on the latest version ($CURRENT)"
@@ -62,7 +62,7 @@ capabilities.
 - Clone latest claudesidian to temp directory (doesn't affect user's repo):
   ```bash
   # Get fresh copy in .tmp dir (hidden from Obsidian) - user's repo stays disconnected
-  git clone --depth=1 --branch=main https://github.com/heyitsnoah/claudesidian.git .tmp/claudesidian-upgrade
+  git clone --depth=1 --branch=main https://github.com/jelin-sh/my-claudesidian.git .tmp/claudesidian-upgrade
   ```
 - Now we have latest version to compare against
 
