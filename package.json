@@ -1,6 +1,6 @@
 {
   "name": "my-claudesidian",
-  "version": "0.14.2",
+  "version": "0.1.0",
   "description": "Claude Code + Obsidian Starter Kit - AI-powered second brain",
   "type": "module",
   "scripts": {
