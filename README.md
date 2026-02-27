@@ -1,8 +1,8 @@
-# My-Claudesidian: Claude Code + Obsidian 入门套件
+# 🧠 My-Claudesidian: Claude Code + Obsidian 入门套件
 
 使用 Claude Code 将你的 Obsidian vault 变成 AI 驱动的第二大脑。
 
-## 简介
+## ✨ 简介
 
 My-Claudesidian 是一个预配置的 Obsidian vault 结构，专为与 Claude Code 无缝协作而设计。它结合了 PARA 方法论、Git 版本控制和 AI 驱动的工作流，帮助你构建一个强大的知识管理系统。
 
@@ -13,14 +13,14 @@ My-Claudesidian 是一个预配置的 Obsidian vault 结构，专为与 Claude C
 - **Git 版本控制**：完整的版本追踪，支持多设备同步
 - **跨平台访问**：从桌面到移动设备，随时随地访问你的知识库
 
-## 前置要求
+## 📦 前置要求
 
 ### 必需工具
 
 - **[Git](https://git-scm.com/)** - 版本控制系统
 - **[Obsidian](https://obsidian.md/)** - 笔记应用
 
-## 快速开始
+## 🚀 快速开始
 
 ### 1. 获取项目
 
@@ -64,7 +64,7 @@ claude
 
 Obsidian 提供可视化界面，与 Claude Code 并行使用，发挥各自优势。
 
-## 文件夹结构
+## 📂 文件夹结构
 
 ```
 my-claudesidian/
@@ -96,9 +96,9 @@ my-claudesidian/
 | `50_Attachments` | 所有附件文件的集中存储 | 图片、PDF、视频、音频 |
 | `60_Metadata` | 系统配置和模板 | 文档模板、配置文件 |
 
-## 可用命令
+## 💡 可用命令
 
-### 核心命令
+### 🎯 核心命令
 
 在 Claude Code 中使用 `/命令名` 调用。
 
@@ -110,23 +110,21 @@ my-claudesidian/
 | `/inbox-processor` | 整理收件箱中的内容 |
 | `/research-assistant` | 深度研究工作流 |
 
-### 实用命令
+### 🛠️ 实用命令
 
 | 命令 | 描述 |
 |------|------|
 | `/create-command` | 创建新的自定义命令 |
 | `/de-ai-ify` | 去除文本中的 AI 写作风格 |
-| `/upgrade` | 升级到最新版本（保留自定义） |
 
-### 管理命令
+### ⚙️ 管理命令
 
 | 命令 | 描述 |
 |------|------|
-| `/release` | 自动发布新版本 |
 | `/pull-request` | 创建拉取请求 |
 | `/pragmatic-review` | 代码审查（专注 YAGNI 和 KISS 原则） |
 
-## 辅助脚本
+## 🔧 辅助脚本
 
 项目包含一些实用的 Bash 脚本：
 
@@ -138,7 +136,7 @@ my-claudesidian/
 .scripts/transcript-extract.sh        # 从 YouTube 视频提取字幕
 ```
 
-## 技能（Skills）
+## 🧩 技能（Skills）
 
 技能是自动加载的专业知识模块，在特定场景下提供帮助：
 
@@ -150,7 +148,7 @@ my-claudesidian/
 | `obsidian-markdown` | Obsidian Markdown 语法和特性 |
 | `systematic-debugging` | 系统化调试方法论 |
 
-## 目录编号规则
+## 🔢 目录编号规则
 
 My-Claudesidian 使用两位数前缀确保跨平台的一致排序：
 
@@ -181,7 +179,7 @@ My-Claudesidian 使用两位数前缀确保跨平台的一致排序：
 - 清晰的优先级排序
 - 易于扩展和组织
 
-## PARA 方法简介
+## 📋 PARA 方法简介
 
 **Projects（项目）** - 有明确目标和截止日期的短期任务
 
@@ -203,9 +201,9 @@ My-Claudesidian 使用两位数前缀确保跨平台的一致排序：
 - 示例：已完成的项目、旧的会议笔记
 - 存放位置：`40_Archive/2024/`
 
-## 工作流程建议
+## 💼 工作流程建议
 
-### 思考模式 vs 写作模式
+### 🧠 思考模式 vs ✍️ 写作模式
 
 **思考模式**（研究与探索）：
 - Claude 提问以理解你的目标
@@ -218,7 +216,7 @@ My-Claudesidian 使用两位数前缀确保跨平台的一致排序：
 - 帮助构建和编辑内容
 - 创建最终可交付成果
 
-### 每日使用流程
+### 📅 每日使用流程
 
 1. **晨间规划**：查看今日任务，确定工作重点
 2. **捕捉想法**：将新想法放入 `00_Inbox/`
@@ -226,23 +224,7 @@ My-Claudesidian 使用两位数前缀确保跨平台的一致排序：
 4. **定期整理**：使用 `/inbox-processor` 整理收件箱
 5. **日终回顾**：使用 `/daily-review` 反思一天的工作
 
-## 升级系统
-
-当有新版本可用时，Claude Code 会自动提醒你。
-
-```bash
-# 在 Claude Code 中运行升级命令
-/upgrade
-```
-
-升级功能：
-- 创建带时间戳的备份
-- 显示每个文件的差异
-- 保留个人自定义和内容
-- 仅更新系统文件
-- 可随时回滚
-
-## 贡献
+## 🤝 贡献
 
 我们欢迎社区贡献！
 
@@ -270,13 +252,13 @@ My-Claudesidian 使用两位数前缀确保跨平台的一致排序：
 - 辅助脚本和集成指南
 - 核心功能优化
 
-## 资源链接
+## 📚 资源链接
 
 - [Obsidian 文档](https://help.obsidian.md)
 - [Claude Code 文档](https://claude.ai/docs)
 - [PARA 方法介绍](https://fortelabs.com/blog/para/)
 
-## 许可证
+## 📄 许可证
 
 MIT License - 请随意使用和定制，让它成为你自己的作品。
 
